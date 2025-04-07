@@ -9,5 +9,5 @@ export default function PostsPage() {
       <PostList hasNavigation={false} />
       <Footer />
     </>
-  )
+  );
 }

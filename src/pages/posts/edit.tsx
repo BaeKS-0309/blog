@@ -7,5 +7,5 @@ export default function PostEdit() {
       <Header />
       <PostForm />
     </>
-  )
-} 
+  );
+}

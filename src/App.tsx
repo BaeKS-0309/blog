@@ -1,36 +1,35 @@
+import { useEffect, useState, useContext } from "react";
+import { app } from "firebaseApp";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { ToastContainer } from "react-toastify";
+import ThemeContext from "context/ThemeContext";
 
-import { useEffect, useState, useContext } from 'react';
-import { app } from 'firebaseApp';
-import { getAuth, onAuthStateChanged } from "firebase/auth"
-import { ToastContainer } from 'react-toastify';
-import ThemeContext from 'context/ThemeContext';
-
-import Router from 'components/Router';
-import Loader from 'components/Loader';
+import Router from "components/Router";
+import Loader from "components/Loader";
 
 function App() {
-  const context = useContext(ThemeContext)
-  const auth = getAuth(app)
+  const context = useContext(ThemeContext);
+  const auth = getAuth(app);
 
-  const [init, setInti] = useState<boolean>(false)
+  const [init, setInti] = useState<boolean>(false);
 
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(!!auth?.currentUser)
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(!!auth?.currentUser);
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
-      if(user) {
-        setIsAuthenticated(true)
+      if (user) {
+        setIsAuthenticated(true);
       } else {
-        setIsAuthenticated(false)
+        setIsAuthenticated(false);
       }
-      setInti(true)
-    })
-  }, [auth])
+      setInti(true);
+    });
+  }, [auth]);
 
   return (
-    <div className={context.theme === 'light' ? 'white' : 'dark'}>
+    <div className={context.theme === "light" ? "white" : "dark"}>
       <ToastContainer />
-      {init ?  <Router isAuthenticated={isAuthenticated}/> : <Loader />}
+      {init ? <Router isAuthenticated={isAuthenticated} /> : <Loader />}
     </div>
   );
 }

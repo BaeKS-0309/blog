@@ -1,10 +1,6 @@
 import { useState } from "react";
 export default function Carousel() {
+  const [activeImage, setActiveImage] = useState();
 
-  const [activeImage, setActiveImage] = useState()
-
-
-  return <>
-
-  </>
+  return <></>;
 }

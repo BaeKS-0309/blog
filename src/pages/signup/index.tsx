@@ -7,5 +7,5 @@ export default function SignupPage() {
       <Header />
       <SignupForm />
     </>
-  )
+  );
 }
