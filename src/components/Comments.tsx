@@ -38,7 +38,7 @@ export default function Comments({ post, getPost }: CommentProps) {
             content: comment,
             uid: user.uid,
             email: user.email,
-            createdAt: new Date()?.toLocaleDateString("ko", {
+            createAt: new Date()?.toLocaleDateString("ko", {
               hour: "2-digit",
               minute: "2-digit",
               second: "2-digit",
@@ -46,7 +46,7 @@ export default function Comments({ post, getPost }: CommentProps) {
           };
 
           await updateDoc(postRef, {
-            comment: arrayUnion(commentObj),
+            comments: arrayUnion(commentObj),
             updateDated: new Date()?.toLocaleDateString("ko", {
               hour: "2-digit",
               minute: "2-digit",
