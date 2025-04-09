@@ -30,7 +30,6 @@ export default function Comments({ post, getPost }: CommentProps) {
     console.log(user);
     try {
       if (post && post?.id) {
-        console.log(post);
         const postRef = doc(db, "posts", post.id);
 
         if (user?.uid) {
