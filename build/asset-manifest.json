@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.c6e463e2.css",
-    "main.js": "/blog/static/js/main.0180562f.js",
+    "main.css": "/blog/static/css/main.f450eb5e.css",
+    "main.js": "/blog/static/js/main.bc2fde7b.js",
+    "static/media/WinkyRough-Bold.woff": "/blog/static/media/WinkyRough-Bold.ff113f821e208203ad01.woff",
     "index.html": "/blog/index.html",
-    "main.c6e463e2.css.map": "/blog/static/css/main.c6e463e2.css.map",
-    "main.0180562f.js.map": "/blog/static/js/main.0180562f.js.map"
+    "main.f450eb5e.css.map": "/blog/static/css/main.f450eb5e.css.map",
+    "main.bc2fde7b.js.map": "/blog/static/js/main.bc2fde7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6e463e2.css",
-    "static/js/main.0180562f.js"
+    "static/css/main.f450eb5e.css",
+    "static/js/main.bc2fde7b.js"
   ]
 }
