@@ -3,6 +3,13 @@
   display: flex;
   height: 70px;
 
+
+  .header__logo {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'WinkyRough-Bold';
+  }
+
   .header__wrap {
     max-width: 900px;
     width: 100%;
@@ -13,36 +20,155 @@
     padding: 0 20px;
   }
 
-  .header__logo {
-    font-weight: bold;
-    font-size: 28px;
-    font-family: 'WinkyRough-Bold';
-  }
+  &.pc {
+    .header__gnb {
+      display: flex;
 
-  .header__gnb {
-    display: flex;
-    gap: 40px;
+      a {
+        display: inline-block;
+        font-size: 18px;
+        color: #444;
+        margin: 0 18px;
+        text-align: center;
 
-    a {
-      font-size: 20px;
-      font-family: 'WinkyRough-Light';
-      color: #444;
+        &:hover {
+          font-weight: bold;
+        }
+
+        &:first-child {
+          width: 40px;
+        }
+
+        &:nth-child(2) {
+          width: 60px;
+        }
+
+        &:last-child {
+          width: 75px;
+        }
+      }
+    }
+
+    .header__utils {
+      display: flex;
+      gap: 20px;
+      align-items: baseline;
+
+      .header__utils__git {
+        font-size: 21px;
+      }
+
+      .header__utils__theme-btn {
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+
+    .header__hamburger {
+      display: none;
+
+      .header__hamburger__icon {
+        .header__hamburger-btn {
+          font-size: 26px;
+        }
+      }
+
+      .header__hamburger__allmenu {
+        position: fixed;
+        left: 0;
+        top: 70px;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        display: flex;
+
+
+        a {}
+      }
     }
   }
 
-  .header__utils {
-    display: flex;
-    gap: 20px;
-    align-items: baseline;
+  &.mobile {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 9999;
+    height: 70px;
+    // height: 100%;
+    align-items: flex-start;
 
-    .header__utils_git {
-      font-size: 21px;
+    .header__wrap {
+      padding: 20px;
     }
 
-    .header__utils__theme-btn {
-      font-size: 24px;
+    .header__gnb {
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      justify-content: space-evenly;
+      height: 65%;
+
+
+      a {
+        font-size: 32px;
+        font-weight: bold;
+
+      }
+    }
+
+    .header__utils {
+      visibility: hidden;
+      display: flex;
+      position: absolute;
+      bottom: 70px;
+      align-items: baseline;
+
+      .header__utils__git {
+        font-size: 24px;
+        margin-right: 40px;
+      }
+
+      .header__utils__theme-btn {
+        font-size: 27px;
+        cursor: pointer;
+      }
+    }
+
+    .header__hamburger {
+      display: block;
+      cursor: pointer;
+
+      .header__hamburger__icon {
+        .header__hamburger-btn {
+          font-size: 26px;
+        }
+      }
+
+      .header__hamburger__allmenu {
+        position: fixed;
+        left: 0;
+        top: 70px;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        display: flex;
+
+        a {}
+      }
     }
   }
+
+
+
+
+
+
 }
 
 /****************************************************** footer */
