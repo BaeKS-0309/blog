@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.bd614962.css",
-    "main.js": "/blog/static/js/main.1991595f.js",
+    "main.css": "/blog/static/css/main.d54bb669.css",
+    "main.js": "/blog/static/js/main.0bfd2060.js",
+    "static/media/electronRecipe.png": "/blog/static/media/electronRecipe.4b178994bfe7df4d55b1.png",
     "static/media/Maplestory-Bold.woff": "/blog/static/media/Maplestory-Bold.59b028aefdc5670c3c8b.woff",
     "static/media/Maplestory-Light.woff": "/blog/static/media/Maplestory-Light.181047d24de52316389e.woff",
     "static/media/WinkyRough-Light.woff": "/blog/static/media/WinkyRough-Light.bc5df4ad4a654334f241.woff",
@@ -12,11 +13,11 @@
     "static/media/WinkyRough-Regular.woff": "/blog/static/media/WinkyRough-Regular.7069e6e7beb9bf5a6644.woff",
     "static/media/WinkyRough-SemiBold.woff": "/blog/static/media/WinkyRough-SemiBold.749929e177d0b2361ddf.woff",
     "index.html": "/blog/index.html",
-    "main.bd614962.css.map": "/blog/static/css/main.bd614962.css.map",
-    "main.1991595f.js.map": "/blog/static/js/main.1991595f.js.map"
+    "main.d54bb669.css.map": "/blog/static/css/main.d54bb669.css.map",
+    "main.0bfd2060.js.map": "/blog/static/js/main.0bfd2060.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd614962.css",
-    "static/js/main.1991595f.js"
+    "static/css/main.d54bb669.css",
+    "static/js/main.0bfd2060.js"
   ]
 }
