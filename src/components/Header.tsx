@@ -54,9 +54,9 @@ export default function Header() {
   return (
     <header ref={headerRef} className={"header " + (isMobile ? "pc" : "mobile")}>
       <div className='header__wrap'>
-        <Link to='/' className='header__logo'>
-          Blog
-        </Link>
+        <h1 className='header__logo'>
+          <Link to='/'>Blog</Link>
+        </h1>
 
         <div ref={headerGnbRef} className='header__gnb'>
           <Link to='/posts/new'>Blog</Link>

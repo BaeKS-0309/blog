@@ -1,3 +1,13 @@
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+  font-size: inherit;
+}
+
+
+
 /****************************************************** header */
 .header {
   display: flex;
@@ -81,9 +91,6 @@
         bottom: 0;
         background: #fff;
         display: flex;
-
-
-        a {}
       }
     }
   }
@@ -101,6 +108,7 @@
     align-items: flex-start;
 
     .header__wrap {
+      max-width: 600px;
       padding: 20px;
     }
 
@@ -171,6 +179,8 @@
 
 }
 
+
+
 /****************************************************** footer */
 footer {
   background: #f2f2f2;
@@ -180,18 +190,19 @@ footer {
   align-items: center;
   text-align: center;
   justify-content: center;
-  gap: 20px;
 
-  a {
+  .copyright {
+    font-family: 'Noto Sans KR';
     margin: 0 10px;
     text-decoration: none;
     color: gray;
-
-    &:focus,
-    &:hover {
-      color: #000;
-    }
+    font-size: 12px;
   }
+}
+
+
+.main {
+  margin-top: 70px;
 }
 
 /****************************************************** post navigation */
@@ -274,13 +285,7 @@ footer {
 }
 
 .post__delete {
-
-
   cursor: pointer;
-
-
-
-
 }
 
 .post__delete,
